@@ -89,7 +89,7 @@ window.addEventListener("keypress", (event) => {
 const input = document.querySelector(".input");
 const root = document.querySelector(":root");
 
-setColor();
+input.addEventListener("input", setColor);
 function setColor() {
     setInterval(()=>{root.style.setProperty("--base", input.value)}, 10)
 }
