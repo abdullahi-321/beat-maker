@@ -87,6 +87,7 @@ window.addEventListener("keypress", (event) => {
 });
 
 const input = document.querySelector(".input");
+input.value = "yellow"
 const root = document.querySelector(":root");
 
 input.addEventListener("input", setColor);
